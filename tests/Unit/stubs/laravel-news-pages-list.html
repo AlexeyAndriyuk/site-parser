@@ -1,0 +1,918 @@
+
+<!doctype html><html lang="en">
+<head> <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Laravel News</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog" />
+    <meta property="og:url" content="https://laravel-news.com/blog" />
+    <meta property="og:site_name" content="Laravel News" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laravelnews" />
+    <meta name="twitter:title" content="Blog" />
+    <link href="https://laravel-news.com/" rel="home" />
+    <link href="https://laravel-news.com/blog" rel="canonical" />
+    <link href="https://laravel-news.com/blog?page=2" rel="next" />
+    <link type="text/plain" rel="author" href="https://laravel-news.com/humans.txt" />
+    <link rel="stylesheet" href="/css/app.css?id=e27af19c4b9e2eacbb197cc4e0e5a5f2">
+    <script src="/js/site.js?id=153518d63cb04088f750759be6778d64"></script>
+    <script src="https://cat.laravel-news.com/script.js" site="BYASFNCM" data-spa="auto" defer></script>
+    <link rel="alternate" type="application/rss+xml" title="Laravel News &raquo; Feed" href="https://feed.laravel-news.com/">
+    <link rel="alternate" title="Laravel News Feed" type="application/json" href="https://laravel-news.com/feed/json" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="fb:admins" content="100007722642618">
+    <meta property="fb:app_id" content="440569919467159">
+</head>
+<body class="flex flex-col min-h-screen antialiased" x-data="{ isMobileNavOpen: false }" :class="{ 'overflow-hidden': isMobileNavOpen }">
+<header class="grid grid-cols-12  bg-black ">
+    <nav class="max-w-screen-2xl relative z-20 w-full col-span-12 px-4 py-6 mx-auto">
+
+        <div class="md:hidden z-30 flex items-center justify-between">
+            <a href="https://laravel-news.com" aria-label="Home" class="flex items-center mr-5">
+                <span class="sr-only">Laravel News</span>
+                <svg class="w-12 h-12" fill="none" height="132" viewBox="0 0 134 132" width="134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a-mobile"><stop offset="0" stop-color="#fff" /><stop offset=".1217" stop-color="#fffbfb" /><stop offset=".241" stop-color="#fff0ef" /><stop offset=".3594" stop-color="#ffdedc" /><stop offset=".4773" stop-color="#ffc3c0" /><stop offset=".5948" stop-color="#ffa29c" /><stop offset=".7121" stop-color="#ff7970" /><stop offset=".8272" stop-color="#ff493e" /><stop offset=".8616" stop-color="#ff392d" /><stop offset="1" stop-color="#ff2d20" /></linearGradient><linearGradient id="b-mobile" gradientUnits="userSpaceOnUse" x1="27.8771" x2="86.7363" xlink:href="#a-mobile" y1="65.8138" y2="65.8138" /><linearGradient id="c-mobile" gradientUnits="userSpaceOnUse" x1="54.7828" x2="54.7828" xlink:href="#a-mobile" y1="57.2727" y2="86.9087" /><path d="m129.001 0h-124.22756c-2.20914 0-4.000002 1.79086-4.000002 4v123.628c0 2.209 1.790872 4 4.000012 4h124.22755c2.209 0 4-1.791 4-4v-123.628c0-2.20914-1.791-4-4-4z" fill="#ff2d20" /><path d="m81.5414 89.0681h-42.8088v-56.1614h-10.8537v65.8141h9.0356 1.8181 47.9877z" fill="url(#b-mobile)" /><path d="m105.894 32.9067h-10.3027v55.229l-30.0267-55.229h-15.8673v48.3734h10.1374v-37.7883l30.0268 55.229h16.0325z" fill="#fff" /><path d="m59.8347 57.2583h-10.1374v29.6163h10.1374z" fill="url(#c-mobile)" /></svg>
+                <p class="font-display text-brand-500 ml-2 mr-4 text-xl font-bold leading-normal">
+                    Laravel News
+                </p>
+            </a>
+            <div class="flex -mr-2">
+                <button x-on:click.prevent="isMobileNavOpen = !isMobileNavOpen" class="hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white z-20 inline-flex items-center justify-center p-2 text-gray-400 transition duration-300 ease-in-out rounded-sm" x-bind:aria-label="isMobileNavOpen ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="isMobileNavOpen">
+                    <svg class="block w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:justify-between md:flex items-center hidden">
+            <div class="md:flex-row md:items-center flex flex-col">
+                <a href="https://laravel-news.com" aria-label="Home" class="flex items-center mr-5">
+                    <span class="sr-only">Laravel News</span>
+                    <svg class="w-12 h-12" fill="none" height="132" viewBox="0 0 134 132" width="134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a"><stop offset="0" stop-color="#fff" /><stop offset=".1217" stop-color="#fffbfb" /><stop offset=".241" stop-color="#fff0ef" /><stop offset=".3594" stop-color="#ffdedc" /><stop offset=".4773" stop-color="#ffc3c0" /><stop offset=".5948" stop-color="#ffa29c" /><stop offset=".7121" stop-color="#ff7970" /><stop offset=".8272" stop-color="#ff493e" /><stop offset=".8616" stop-color="#ff392d" /><stop offset="1" stop-color="#ff2d20" /></linearGradient><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="27.8771" x2="86.7363" xlink:href="#a" y1="65.8138" y2="65.8138" /><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="54.7828" x2="54.7828" xlink:href="#a" y1="57.2727" y2="86.9087" /><path d="m129.001 0h-124.22756c-2.20914 0-4.000002 1.79086-4.000002 4v123.628c0 2.209 1.790872 4 4.000012 4h124.22755c2.209 0 4-1.791 4-4v-123.628c0-2.20914-1.791-4-4-4z" fill="#ff2d20" /><path d="m81.5414 89.0681h-42.8088v-56.1614h-10.8537v65.8141h9.0356 1.8181 47.9877z" fill="url(#b)" /><path d="m105.894 32.9067h-10.3027v55.229l-30.0267-55.229h-15.8673v48.3734h10.1374v-37.7883l30.0268 55.229h16.0325z" fill="#fff" /><path d="m59.8347 57.2583h-10.1374v29.6163h10.1374z" fill="url(#c)" /></svg>
+                    <p class="font-display text-brand-500 ml-2 mr-4 text-xl font-bold leading-normal">
+                        Laravel News
+                    </p>
+                </a>
+                <a href="/blog" aria-label="click to go to Blog">
+<span class="link  link--gray font-display mx-2 lg:mx-3 text-xl font-medium tracking-tight ">
+Blog
+</span>
+                </a>
+                <a href="/category/tutorials" aria-label="click to go to Tutorials">
+<span class="link  link--gray font-display mx-2 lg:mx-3 text-xl font-medium tracking-tight ">
+Tutorials
+</span>
+                </a>
+                <a href="/category/packages" aria-label="click to go to Packages">
+<span class="link  link--gray font-display mx-2 lg:mx-3 text-xl font-medium tracking-tight ">
+Packages
+</span>
+                </a>
+                <a href="/podcast" aria-label="click to go to Podcast">
+<span class="link  link--gray font-display mx-2 lg:mx-3 text-xl font-medium tracking-tight ">
+Podcast
+</span>
+                </a>
+                <a href="/newsletter" aria-label="click to go to Newsletter">
+<span class="link  link--gray font-display mx-2 lg:mx-3 text-xl font-medium tracking-tight ">
+Newsletter
+</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://larajobs.com/" aria-label="click to go to Jobs">
+<span class="link  link--gray font-display xl:inline-block hidden text-sm ">
+Jobs
+</span>
+                </a>
+                <a href="/partners" aria-label="click to go to Partners">
+<span class="link  link--gray font-display xl:inline-block hidden text-sm ">
+Partners
+</span>
+                </a>
+                <a href="/links" aria-label="click to go to Links">
+<span class="link  link--gray font-display xl:inline-block hidden text-sm ">
+Links
+</span>
+                </a>
+                <div class="">
+                    <label for="-header_desktop-search" class="sr-only">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="text-black stroke-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="9.8995" cy="8.89941" r="6" transform="rotate(-45 9.8995 8.89941)" stroke="current" stroke-width="2" /> <line x1="13.435" y1="12.435" x2="19.0919" y2="18.0918" stroke="current" stroke-width="2" /> </svg>
+                        </div>
+                        <form action="/search">
+                            <input type="hidden" name="index" value="articles">
+                            <input id="-header_desktop-search" class="form-input form-input-search" name="q" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden fixed top-0 left-0 z-20 flex flex-col items-center justify-center w-full h-full overflow-y-auto bg-black" x-show="isMobileNavOpen" x-cloak @click.away="isMobileNavOpen = false" x-transition:enter="transition ease-linear duration-200 transform" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-200 transform" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full">
+            <button @click.prevent="isMobileNavOpen = !isMobileNavOpen" class="hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white absolute top-0 right-0 z-50 inline-flex items-center justify-center p-2 m-4 text-gray-300 transition duration-200 ease-in-out rounded-sm" x-bind:aria-label="'Close main menu'" aria-label="Main menu" x-bind:aria-expanded="isMobileNavOpen">
+                <svg class="w-6 h-6" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="currentColor" stroke-width="1.2" fill="none" fill-rule="evenodd" stroke-linecap="round" class="w-4 h-4 text-gray-300">
+                    <path d="M1.5,1.5 L10.5,10.5 M1.37697205,10.5152716 L10.376972,1.5152716"></path>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center w-full h-full p-12">
+                <div class="pt-8 mb-6">
+                    <a href="https://laravel-news.com" aria-label="Home" class="flex items-center">
+                        <span class="sr-only">Laravel News</span>
+                        <svg class="w-12 h-12" fill="none" height="132" viewBox="0 0 134 132" width="134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a-mobile"><stop offset="0" stop-color="#fff" /><stop offset=".1217" stop-color="#fffbfb" /><stop offset=".241" stop-color="#fff0ef" /><stop offset=".3594" stop-color="#ffdedc" /><stop offset=".4773" stop-color="#ffc3c0" /><stop offset=".5948" stop-color="#ffa29c" /><stop offset=".7121" stop-color="#ff7970" /><stop offset=".8272" stop-color="#ff493e" /><stop offset=".8616" stop-color="#ff392d" /><stop offset="1" stop-color="#ff2d20" /></linearGradient><linearGradient id="b-mobile" gradientUnits="userSpaceOnUse" x1="27.8771" x2="86.7363" xlink:href="#a-mobile" y1="65.8138" y2="65.8138" /><linearGradient id="c-mobile" gradientUnits="userSpaceOnUse" x1="54.7828" x2="54.7828" xlink:href="#a-mobile" y1="57.2727" y2="86.9087" /><path d="m129.001 0h-124.22756c-2.20914 0-4.000002 1.79086-4.000002 4v123.628c0 2.209 1.790872 4 4.000012 4h124.22755c2.209 0 4-1.791 4-4v-123.628c0-2.20914-1.791-4-4-4z" fill="#ff2d20" /><path d="m81.5414 89.0681h-42.8088v-56.1614h-10.8537v65.8141h9.0356 1.8181 47.9877z" fill="url(#b-mobile)" /><path d="m105.894 32.9067h-10.3027v55.229l-30.0267-55.229h-15.8673v48.3734h10.1374v-37.7883l30.0268 55.229h16.0325z" fill="#fff" /><path d="m59.8347 57.2583h-10.1374v29.6163h10.1374z" fill="url(#c-mobile)" /></svg>
+                        <p class="font-display text-brand-500 ml-2 text-xl font-bold leading-normal">
+                            Laravel News
+                        </p>
+                    </a>
+                </div>
+                <div class="">
+                    <label for="-header_mobile-search" class="sr-only">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="text-black stroke-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="9.8995" cy="8.89941" r="6" transform="rotate(-45 9.8995 8.89941)" stroke="current" stroke-width="2" /> <line x1="13.435" y1="12.435" x2="19.0919" y2="18.0918" stroke="current" stroke-width="2" /> </svg>
+                        </div>
+                        <form action="/search">
+                            <input type="hidden" name="index" value="articles">
+                            <input id="-header_mobile-search" class="form-input form-input-search" name="q" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="flex-grow w-full max-w-lg">
+                    <ul class="grid grid-cols-12 gap-2 py-8">
+                        <li class="inline-flex items-center justify-center col-span-12">
+                            <a href="/blog" aria-label="click to go to Blog">
+<span class="link  link--gray link--lg mx-3 mt-3 mb-6 text-4xl font-bold tracking-tight ">
+Blog
+</span>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-center justify-center col-span-12">
+                            <a href="/category/tutorials" aria-label="click to go to Tutorials">
+<span class="link  link--gray link--lg mx-3 mt-3 mb-6 text-4xl font-bold tracking-tight ">
+Tutorials
+</span>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-center justify-center col-span-12">
+                            <a href="/category/packages" aria-label="click to go to Packages">
+<span class="link  link--gray link--lg mx-3 mt-3 mb-6 text-4xl font-bold tracking-tight ">
+Packages
+</span>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-center justify-center col-span-12">
+                            <a href="/podcast" aria-label="click to go to Podcast">
+<span class="link  link--gray link--lg mx-3 mt-3 mb-6 text-4xl font-bold tracking-tight ">
+Podcast
+</span>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-center justify-center col-span-12">
+                            <a href="/newsletter" aria-label="click to go to Newsletter">
+<span class="link  link--gray link--lg mx-3 mt-3 mb-6 text-4xl font-bold tracking-tight ">
+Newsletter
+</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-center w-3/4">
+                    <div class="flex justify-center my-6 space-x-8">
+                        <a href="https://www.facebook.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:rotate-12 transition-transform duration-100 ease-linear transform">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"> <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="#1877F2" /> <path d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z" fill="white" /> </svg>
+                            <p class="sr-only">Facebook</p>
+                        </a>
+                        <a href="https://twitter.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:rotate-12 transition-transform duration-100 ease-linear transform">
+                            <svg class="h-5 w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M27.0487 5.88631C26.0782 6.31336 25.0438 6.59637 23.9659 6.73353C25.0751 6.06962 25.9215 5.02597 26.3194 3.76837C25.2852 4.38667 24.1437 4.82346 22.9269 5.06704C21.9448 4.01846 20.5455 3.36926 19.0189 3.36926C16.0567 3.36926 13.6722 5.78016 13.6722 8.73553C13.6722 9.16078 13.7081 9.5694 13.7963 9.959C9.34819 9.74123 5.41244 7.60388 2.76846 4.34746C2.30674 5.15027 2.03603 6.06962 2.03603 7.05903C2.03603 8.91693 2.99017 10.564 4.41264 11.5172C3.55306 11.5011 2.70967 11.251 1.99529 10.857V10.9157C1.99529 13.5225 3.84996 15.6878 6.28164 16.1865C5.84611 16.3062 5.37164 16.3633 4.87896 16.3633C4.53673 16.3633 4.19067 16.3435 3.8661 16.2717C4.55953 18.3963 6.52648 19.9582 8.86541 20.0088C7.04508 21.4365 4.73382 22.2968 2.23187 22.2968C1.79322 22.2968 1.37235 22.2775 0.951416 22.2234C3.32135 23.7558 6.13016 24.6307 9.15919 24.6307C19.004 24.6307 24.3868 16.4533 24.3868 9.36526C24.3868 9.12802 24.3783 8.89894 24.3671 8.67176C25.429 7.91609 26.3212 6.97251 27.0487 5.88631Z" fill="#1DA1F2" /> </svg>
+                            <p class="sr-only">Twitter</p>
+                        </a>
+                        <a href="https://www.linkedin.com/company/laravel-news" rel="noopener" rel="noreferrer" class="hover:rotate-12 transition-transform duration-100 ease-linear transform">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m22.2283 0h-20.45663c-.46988 0-.920509.186657-1.252761.518909s-.518909.782881-.518909 1.252761v20.45663c0 .4699.186657.9205.518909 1.2528.332252.3322.782881.5189 1.252761.5189h20.45663c.4699 0 .9205-.1867 1.2528-.5189.3322-.3323.5189-.7829.5189-1.2528v-20.45663c0-.46988-.1867-.920509-.5189-1.252761-.3323-.332252-.7829-.518909-1.2528-.518909zm-15.07497 20.445h-3.60833v-11.46167h3.60833zm-1.80666-13.05c-.40931-.0023-.80875-.1258-1.14794-.35491-.33918-.22911-.60289-.55356-.75785-.9324-.15497-.37884-.19423-.7951-.11285-1.19624.08138-.40113.27977-.76917.57013-1.05767.29035-.28849.65966-.48451 1.06131-.56332s.81764-.03687 1.19548.12053c.37784.15739.70059.42318.92752.76382.22692.34065.34785.74088.34753 1.15019.00386.27403-.04749.54604-.15099.7998-.1035.25377-.25703.4841-.45144.67727-.19441.19316-.42572.34521-.68015.44708-.25442.10187-.52675.15147-.80075.14585zm15.10663 13.06h-3.6066v-6.2617c0-1.8466-.785-2.4166-1.7984-2.4166-1.07 0-2.12.8066-2.12 2.4633v6.215h-3.6083v-11.46333h3.47v1.58833h.0467c.3483-.705 1.5683-1.91 3.43-1.91 2.0133 0 4.1883 1.195 4.1883 4.695z" fill="#0a66c2" /></g></svg>
+                            <p class="sr-only">LinkedIn</p>
+                        </a>
+                        <a href="https://instagram.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:rotate-12 transition-transform duration-100 ease-linear transform">
+                            <svg class="h-5 w-5" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m12 2.16094c3.2063 0 3.5859.01406 4.8469.07031 1.1719.05156 1.8047.24844 2.2265.4125.5579.21563.961.47813 1.3782.89531.4218.42188.6797.82032.8953 1.37813.164.42187.3609 1.05937.4125 2.22656.0562 1.26562.0703 1.64531.0703 4.84685 0 3.2063-.0141 3.586-.0703 4.8469-.0516 1.1719-.2485 1.8047-.4125 2.2266-.2156.5578-.4782.9609-.8953 1.3781-.4219.4219-.8203.6797-1.3782.8953-.4218.1641-1.0593.3609-2.2265.4125-1.2656.0562-1.6453.0703-4.8469.0703-3.20625 0-3.58594-.0141-4.84687-.0703-1.17188-.0516-1.80469-.2484-2.22657-.4125-.55781-.2156-.96093-.4781-1.37812-.8953-.42188-.4219-.67969-.8203-.89531-1.3781-.16407-.4219-.36094-1.0594-.4125-2.2266-.05625-1.2656-.07032-1.6453-.07032-4.8469 0-3.20622.01407-3.58591.07032-4.84685.05156-1.17188.24843-1.80469.4125-2.22656.21562-.55781.47812-.96094.89531-1.37813.42187-.42187.82031-.67968 1.37812-.89531.42188-.16406 1.05938-.36094 2.22657-.4125 1.26093-.05625 1.64062-.07031 4.84687-.07031zm0-2.16094c-3.25781 0-3.66562.0140625-4.94531.0703125-1.275.0562505-2.15156.2624995-2.91094.5578125-.79219.309375-1.4625.717185-2.12812 1.387495-.67032.66563-1.07813 1.33594-1.387505 2.12344-.295313.76407-.501562 1.63594-.5578125 2.91094-.05625 1.28437-.0703125 1.69219-.0703125 4.95 0 3.2578.0140625 3.6656.0703125 4.9453.0562505 1.275.2624995 2.1516.5578125 2.911.309375.7921.717185 1.4625 1.387505 2.1281.66562.6656 1.33593 1.0781 2.12343 1.3828.76407.2953 1.63594.5015 2.91094.5578 1.27969.0562 1.6875.0703 4.9453.0703s3.6656-.0141 4.9453-.0703c1.275-.0563 2.1516-.2625 2.911-.5578.7875-.3047 1.4578-.7172 2.1234-1.3828s1.0781-1.336 1.3828-2.1235c.2953-.764.5016-1.6359.5578-2.9109.0563-1.2797.0703-1.6875.0703-4.9453 0-3.25782-.014-3.66564-.0703-4.94532-.0562-1.275-.2625-2.15157-.5578-2.91094-.2953-.79688-.7031-1.46719-1.3734-2.13282-.6656-.66562-1.336-1.07812-2.1235-1.382808-.764-.295312-1.6359-.501562-2.9109-.557812-1.2844-.0609375-1.6922-.075-4.95-.075z" /><path d="m12 5.83594c-3.40312 0-6.16406 2.76094-6.16406 6.16406 0 3.4031 2.76094 6.1641 6.16406 6.1641 3.4031 0 6.1641-2.761 6.1641-6.1641 0-3.40312-2.761-6.16406-6.1641-6.16406zm0 10.16246c-2.20781 0-3.99844-1.7906-3.99844-3.9984 0-2.20781 1.79063-3.99844 3.99844-3.99844 2.2078 0 3.9984 1.79063 3.9984 3.99844 0 2.2078-1.7906 3.9984-3.9984 3.9984z" /><path d="m19.8469 5.59226c0 .79688-.6469 1.43907-1.4391 1.43907-.7969 0-1.439-.64688-1.439-1.43907 0-.79687.6468-1.43906 1.439-1.43906s1.4391.64687 1.4391 1.43906z" /></g></svg>
+                            <p class="sr-only">Instagram</p>
+                        </a>
+                    </div>
+                    <ul class="flex items-center justify-center space-x-12">
+                        <li>
+                            <a href="https://larajobs.com/" aria-label="click to go to Jobs">
+<span class="link  link--gray font-display text-sm tracking-wider uppercase ">
+Jobs
+</span>
+                            </a>
+                        <li>
+                            <a href="/partners" aria-label="click to go to Partners">
+<span class="link  link--gray font-display text-sm tracking-wider uppercase ">
+Partners
+</span>
+                            </a>
+                        <li>
+                            <a href="/links" aria-label="click to go to Links">
+<span class="link  link--gray font-display text-sm tracking-wider uppercase ">
+Links
+</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="bg-gray-50 flex flex-col flex-grow">
+    <div class="grid grid-cols-12 bg-black">
+        <header class="xl:col-span-5 xl:col-start-2 md:pt-40 md:pb-32 lg:pt-12 col-span-10 col-start-2 pb-20">
+            <h1 class="font-display md:text-8xl mb-6 text-4xl font-semibold leading-none text-white">
+                Blog
+            </h1>
+            <div class="font-display prose-white prose">
+                <p>All the new&nbsp;posts</p>
+            </div>
+        </header>
+    </div>
+    <div class="bg-gray-50 grid grid-cols-12 pb-24">
+        <ul class="md:gap-16 xl:col-span-6 xl:col-start-2 lg:-mt-24 grid grid-cols-12 col-span-10 col-start-2 gap-6 pb-24 -mt-16">
+            <li class="card group col-span-12 group-link-underline">
+                <a href="/modern-php-features-explained" class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=640&amp;h=327.27272727273&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=768&amp;h=392.72727272727&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=1024&amp;h=523.63636363636&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=1366&amp;h=698.52272727273&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=1600&amp;h=818.18181818182&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/modern-php-features.png?w=1920&amp;h=981.81818181818&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2200" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2QxZDFmYSIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2QxZDFmYSIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #d1d1fa;" alt="Modern PHP features explained - PHP 8.0 and 8.1" />
+                        </picture>
+                    </div>
+                    <div class="col-span-12">
+                        <div class="flex items-center mb-3">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #4662B2">
+Tutorials
+</span>
+                            <p class="font-mono text-xs font-normal text-gray-400">October 27th, 2022</p>
+                        </div>
+                        <h3 class="font-display font-semibold tracking-tighter text-black">
+<span class="link link-underline link-underline-black ">
+Modern PHP features explained - PHP 8.0 and 8.1
+</span>
+                        </h3>
+                        <p class="font-display mt-2 text-sm text-gray-400">
+                            Since its release, PHP 8 has been a game changer. In this tutorial, let's walk through all the latest features with real-world examples of when to use them.
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/facades" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=640&amp;h=327.27272727273&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=768&amp;h=392.72727272727&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=1024&amp;h=523.63636363636&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=1366&amp;h=698.52272727273&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=1600&amp;h=818.18181818182&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/reaching-for-facades.png?w=1920&amp;h=981.81818181818&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2200" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2YxZTRmZSIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2YxZTRmZSIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #f1e4fe;" alt="Reaching for Facades" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #4662B2">
+Tutorials
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">November 4th, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Reaching for&nbsp;Facades
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">Facades, people seem to love them or hate them. Either way, they are a natural part of what Laravel is today. Laravel Facades aren't strictly facades, are they?</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/laravel-dom-assertions" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=640&amp;h=324.32432432432&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=768&amp;h=389.18918918919&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=1024&amp;h=518.91891891892&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=1366&amp;h=692.22972972973&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=1600&amp;h=810.81081081081&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel-dom-assertions.png?w=1920&amp;h=972.97297297297&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2220" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #b6b7bc;" alt="Assert DOM Elements in Laravel Tests" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #A40D77">
+Packages
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">November 3rd, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Assert DOM Elements in Laravel&nbsp;Tests
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">The Laravel DOM Assertions package by René Sinnbeck adds helpful DOM assertion helpers to Laravel's TestResponse class</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/laravel-9-38-0" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=640&amp;h=320&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=768&amp;h=384&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1024&amp;h=512&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1366&amp;h=683&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1600&amp;h=800&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1920&amp;h=960&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1100" width="2200" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2YxZjFmMSIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2YxZjFmMSIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #f1f1f1;" alt="Laravel 9.38 Released" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: ">
+News
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">November 2nd, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Laravel 9.38&nbsp;Released
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">The Laravel team released 9.38 with isolated artisan commands, conditionally set notification middleware, max exceptions for queueable notifications, and more.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/multi-purpose-value-objects-for-laravel" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=640&amp;h=324.32432432432&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=768&amp;h=389.18918918919&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=1024&amp;h=518.91891891892&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=1366&amp;h=692.22972972973&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=1600&amp;h=810.81081081081&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel-value-object-featured-1667280786.png?w=1920&amp;h=972.97297297297&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2220" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #b6b7bc;" alt="Multi-purpose Value Objects for Laravel" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #A40D77">
+Packages
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">November 1st, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Multi-purpose Value Objects for&nbsp;Laravel
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">Laravel Value Objects is a collection of general-purpose value objects you can use in your Laravel application.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/summarize-your-pull-requests-in-seconds-with-what-the-diff" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=640&amp;h=336&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=768&amp;h=403.2&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=1024&amp;h=537.6&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=1366&amp;h=717.15&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=1600&amp;h=840&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/what-the-diff.jpg?w=1920&amp;h=1008&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1008" width="1920" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE5MjAgMTAwOCI+CiAgPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iMTAwOCIgZmlsbD0iI2ZmZmZmZiIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE5MjAgMTAwOCI+CiAgPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iMTAwOCIgZmlsbD0iI2ZmZmZmZiIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #ffffff;" alt="Summarize your pull requests in seconds with What The Diff" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #4E6C54">
+Sponsor
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">October 31st, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Summarize your pull requests in seconds with What The&nbsp;Diff
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">The AI-powered GitHub app that explains the changes within your pull requests in plain English.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/laravel-model-flags" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=640&amp;h=324.32432432432&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=768&amp;h=389.18918918919&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=1024&amp;h=518.91891891892&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=1366&amp;h=692.22972972973&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=1600&amp;h=810.81081081081&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel-model-flags-featured.png?w=1920&amp;h=972.97297297297&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2220" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #b6b7bc;" alt="Laravel Model Flags Package" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #A40D77">
+Packages
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">October 28th, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Laravel Model Flags&nbsp;Package
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">Laravel Model Flags is a package by Spatie to allow you to add flags to an Eloquent model.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/laravel-9-37-0" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=640&amp;h=320&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=768&amp;h=384&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1024&amp;h=512&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1366&amp;h=683&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1600&amp;h=800&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel9-1646792144.jpg?w=1920&amp;h=960&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1100" width="2200" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2YxZjFmMSIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2YxZjFmMSIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #f1f1f1;" alt="Laravel 9.37 Released" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: ">
+News
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">October 26th, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Laravel 9.37&nbsp;Released
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">The Laravel team released 9.37 this week along with a few patch releases between 9.37 and the release of Laravel 9.36.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/openai-php-client" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=640&amp;h=324.32432432432&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=768&amp;h=389.18918918919&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=1024&amp;h=518.91891891892&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=1366&amp;h=692.22972972973&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=1600&amp;h=810.81081081081&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/openai-php-client.png?w=1920&amp;h=972.97297297297&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1125" width="2220" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMjAgMTEyNSI+CiAgPHJlY3Qgd2lkdGg9IjIyMjAiIGhlaWdodD0iMTEyNSIgZmlsbD0iI2I2YjdiYyIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #b6b7bc;" alt="OpenAI PHP Client" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #A40D77">
+Packages
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">October 25th, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+OpenAI PHP&nbsp;Client
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">OpenAI PHP is a supercharged PHP API client that allows you to interact with OpenAI API.</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="mb-6 md:mb-0 card group col-span-12 group-link-underline">
+                <a href="/unlock-the-power-of-tdd" class="space-y-4 flex flex-col sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div class="block">
+                        <picture>
+                            <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=640&amp;h=320&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=768&amp;h=384&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=1024&amp;h=512&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=1366&amp;h=683&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=1600&amp;h=800&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/images/laravel_news_article_image.png?w=1920&amp;h=960&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                            <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="1100" width="2200" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2FhYWFhYSIgLz4KPC9zdmc+" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIyMDAgMTEwMCI+CiAgPHJlY3Qgd2lkdGg9IjIyMDAiIGhlaWdodD0iMTEwMCIgZmlsbD0iI2FhYWFhYSIgLz4KPC9zdmc+" class="lazyload mb-8 rounded-lg shadow-none transition-shadow duration-500 ease-in-out group-hover:shadow-lg" style="background-color: #aaaaaa;" alt="Unlock The Power Of TDD" />
+                        </picture>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:col-span-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-1">
+<span class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold leading-5 text-white font-display mr-2 capitalize bg-brand-500" style="background-color: #4E6C54">
+Sponsor
+</span>
+                                <p class="font-mono text-xs font-normal text-gray-400">October 24th, 2022</p>
+                            </div>
+                            <h4 class="font-display font-semibold tracking-tight text-black">
+<span class="link link-underline link-underline-black">
+Unlock The Power Of&nbsp;TDD
+</span>
+                            </h4>
+                            <p class="font-display mt-2 text-sm text-gray-400">Test-Driven development has become my preferred way of programming, and I want to show you why in my latest video course PEST Driven Laravel</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <nav class="flex justify-between col-span-12 ">
+                <a aria-label="Previous page" class="btn group btn--disabled ">
+<span class="z-10">
+Previous
+</span>
+                    <svg class="group-hover:translate-y-0 group-hover:opacity-100 absolute right-0 z-10 mr-3 text-white transition-all duration-200 ease-in transform translate-y-2 opacity-0 fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.0002H15.17L11.29 15.8802C10.9 16.2702 10.9 16.9102 11.29 17.3002C11.68 17.6902 12.31 17.6902 12.7 17.3002L18.29 11.7102C18.68 11.3202 18.68 10.6902 18.29 10.3002L12.71 4.70021C12.32 4.31021 11.69 4.31021 11.3 4.70021C10.91 5.09021 10.91 5.72021 11.3 6.11021L15.17 10.0002H4C3.45 10.0002 3 10.4502 3 11.0002C3 11.5502 3.45 12.0002 4 12.0002Z" fill="current" /> </svg>
+                </a>
+                <a href="https://laravel-news.com/blog?page=2" aria-label="Next page" class="btn group btn--primary ">
+<span class="z-10">
+Next
+</span>
+                    <svg class="group-hover:translate-y-0 group-hover:opacity-100 absolute right-0 z-10 mr-3 text-white transition-all duration-200 ease-in transform translate-y-2 opacity-0 fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.0002H15.17L11.29 15.8802C10.9 16.2702 10.9 16.9102 11.29 17.3002C11.68 17.6902 12.31 17.6902 12.7 17.3002L18.29 11.7102C18.68 11.3202 18.68 10.6902 18.29 10.3002L12.71 4.70021C12.32 4.31021 11.69 4.31021 11.3 4.70021C10.91 5.09021 10.91 5.72021 11.3 6.11021L15.17 10.0002H4C3.45 10.0002 3 10.4502 3 11.0002C3 11.5502 3.45 12.0002 4 12.0002Z" fill="current" /> </svg>
+                </a>
+            </nav>
+        </ul>
+        <div class="xl:col-span-3 xl:col-start-9 grid grid-cols-12 col-span-10 col-start-2 gap-4 sm:gap-8 auto-rows-max xl:-mt-24">
+            <div class=" col-span-12 md:col-span-6 xl:col-span-12  border border-gray-200 flex flex-col p-10 bg-white shadow rounded-lg">
+                <p class="text-brand-500 font-display md:text-4xl mb-2 text-3xl font-semibold tracking-tight">
+                    Newsletter
+                </p>
+                <div class="mb-6 prose">
+                    Join 33,000+ others and never miss out on new tips, tutorials, and more.
+                </div>
+                <div class="prose-xs font-display font-medium prose text-black">
+                    <form class="flex flex-col js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A1DA9AABFFF4B2BC5AD31E42BEF87747B20419BBFFD442A4FC367DD4073E4E8F47B7BC9F7DB38D4B1C9DA62011C4F5CCB" onsubmit="fathom.trackGoal('JWLUPRAA', 0);">
+                        <input type="hidden" id="fieldhrcf-month" name="cm-fd-hrcf-mn" value="11">
+                        <input type="hidden" id="fieldhrcf-day" name="cm-fd-hrcf-dy" value="5">
+                        <input type="hidden" id="fieldhrcf-year" name="cm-fd-hrcf-yr" value="2022">
+                        <label for="blog-form-email" class="sr-only"></label>
+                        <div class="relative">
+                            <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email form-input form-input-lg form-input-light xl:rounded-r-none md:rounded-r-sm w-full rounded-r-none" id="fieldEmail" maxlength="200" name="cm-owwr-owwr" required="" type="email" placeholder="Your email address" />
+                            <button type="submit" aria-label="Join newsletter" class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg class="text-brand-500 h-5 fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.0002H15.17L11.29 15.8802C10.9 16.2702 10.9 16.9102 11.29 17.3002C11.68 17.6902 12.31 17.6902 12.7 17.3002L18.29 11.7102C18.68 11.3202 18.68 10.6902 18.29 10.3002L12.71 4.70021C12.32 4.31021 11.69 4.31021 11.3 4.70021C10.91 5.09021 10.91 5.72021 11.3 6.11021L15.17 10.0002H4C3.45 10.0002 3 10.4502 3 11.0002C3 11.5502 3.45 12.0002 4 12.0002Z" fill="current" /> </svg>
+                            </button>
+                        </div>
+                        <div class="font-display flex items-center mt-4">
+                            <input id="owidy" name="cm-ol-owidy" type="checkbox" value="owidy" class="form-checkbox bg-brand-200 w-6 h-6 transition duration-150 ease-in-out" />
+                            <label for="owidy" class="block ml-2 text-xs font-medium leading-5 text-gray-400">
+                                Opt-in to the daily digest?
+                            </label>
+                        </div>
+                    </form>
+                    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+                    <p>
+                        No Spam, ever. We'll never share your email address and you can opt out at any time.
+                    </p>
+                </div>
+            </div>
+            <div class=" col-span-12 md:col-span-6 xl:col-span-12  px-10 pt-10 pb-40 bg-gray-600 overflow-hidden shadow rounded-lg relative">
+                <p class="text-brand-500 font-display md:text-4xl mb-2 text-3xl font-semibold tracking-tight">
+                    Laravel Jobs
+                </p>
+                <p class="mb-6 text-lg text-white">
+                    The official Laravel job board connecting the best jobs with top&nbsp;talent.
+                </p>
+                <a href="https://larajobs.com/" rel="noopener" target="_blank" aria-label="Go to laravel jobs website" class="btn group btn--primary ">
+<span class="z-10">
+View All Jobs
+</span>
+                    <svg class="group-hover:translate-y-0 group-hover:opacity-100 absolute right-0 z-10 mr-3 text-white transition-all duration-200 ease-in transform translate-y-2 opacity-0 fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.0002H15.17L11.29 15.8802C10.9 16.2702 10.9 16.9102 11.29 17.3002C11.68 17.6902 12.31 17.6902 12.7 17.3002L18.29 11.7102C18.68 11.3202 18.68 10.6902 18.29 10.3002L12.71 4.70021C12.32 4.31021 11.69 4.31021 11.3 4.70021C10.91 5.09021 10.91 5.72021 11.3 6.11021L15.17 10.0002H4C3.45 10.0002 3 10.4502 3 11.0002C3 11.5502 3.45 12.0002 4 12.0002Z" fill="current" /> </svg>
+                </a>
+                <div class=" bottom-0 left-0 absolute" aria-hidden="true">
+                    <div class="animate-marquee inline-flex mb-2" x-init="()=> { laravelnews.domDuplicator($el) }" x-data="{}">
+                        <div class="whitespace-nowrap"><a href="https://larajobs.com/job/2836" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                            PHP Developer
+                        </a>
+                            <a href="https://larajobs.com/job/2809" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Laravel Jedi
+                            </a>
+                            <a href="https://larajobs.com/job/2806" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Systems Integration Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2830" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Medior / Senior Laravel Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2828" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Principal Javascript Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2823" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Remote PHP/Laravel Developer for AR/VR Company
+                            </a>
+                        </div>
+                    </div>
+                    <div class="animate-marquee inline-flex mb-2" x-init="()=> { laravelnews.domDuplicator($el) }" x-data="{}">
+                        <div class="whitespace-nowrap"><a href="https://larajobs.com/job/2803" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                            PHP Software Engineer
+                        </a>
+                            <a href="https://larajobs.com/job/2802" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Backend Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2834" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Backend Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2795" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Full-Stack Laravel Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2812" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                PHP Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2828" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Principal Javascript Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2827" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Staff UI Software Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2807" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Senior Backend Developer (Laravel)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="animate-marquee inline-flex mb-2" x-init="()=> { laravelnews.domDuplicator($el) }" x-data="{}">
+                        <div class="whitespace-nowrap"><a href="https://larajobs.com/job/2811" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                            Senior Front-End developer (VueJS)
+                        </a>
+                            <a href="https://larajobs.com/job/2823" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Remote PHP/Laravel Developer for AR/VR Company
+                            </a>
+                            <a href="https://larajobs.com/job/2812" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                PHP Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2825" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Lead Frontend Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2817" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Laravel/TALL Stack Engineer
+                            </a>
+                            <a href="https://larajobs.com/job/2822" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Back End Developer - UK Based
+                            </a>
+                            <a href="https://larajobs.com/job/2791" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Medior/Senior Laravel developer
+                            </a>
+                            <a href="https://larajobs.com/job/2836" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                PHP Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2820" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Lead PHP Laravel Developer
+                            </a>
+                            <a href="https://larajobs.com/job/2813" target="_blank" rel="noopener noreferrer nofollow" class="hover:opacity-100 text-gray-50 p-1 mr-2 text-xs font-bold transition-opacity duration-100 ease-in bg-gray-400 bg-opacity-25 opacity-75 mb-2">
+                                Senior Manager, Software Engineering
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-span-12 md:col-span-6 xl:col-span-12  border border-gray-200 max-w-sm flex flex-col p-10 bg-white shadow rounded-lg">
+                <h4 class="text-brand-500 font-display md:text-xl md:mb-8 mb-4 text-xl font-semibold tracking-tight text-center">
+                    Laravel News Partners
+                </h4>
+                <ul x-data x-init="fetch('/ajax/partners/sidebar').then(response=> response.text()).then(html => $el.innerHTML = html)" class="flex flex-wrap items-center justify-center">
+
+                    <li class="mb-6">
+                        <a href="https://loadforge.com/?utm_source=ln" title="LoadForge">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/loadforge-400x100.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="LoadForge" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://coinspaid.com/" title="CoinsPaid">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/coinspaid.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjYThhOGE4IiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjYThhOGE4IiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #a8a8a8;" alt="CoinsPaid" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://tighten.com/?utm_source=laravelnews&utm_medium=Banner&utm_campaign=laravelnewspartners&utm_content=Title%20Partner&ref=laravelnewspartners" title="Tighten">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/tighten-partner.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Tighten" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://www.skynettechnologies.com/hire-laravel-developer" title="Skynet Technologies">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/Skynet-Technologies.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Skynet Technologies" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="http://kirschbaumdevelopment.com/" title="Kirschbaum">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/Kirschbaum-dark.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Kirschbaum" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://paragraph.ph/" title="Paragraph">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/paragraph_400_100.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZDRjNGZiIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZDRjNGZiIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #d4c4fb;" alt="Paragraph" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://akaunting.com/developers?utm_source=LaravelNews&utm_medium=Banner&utm_campaign=Developers" title="Akaunting">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/akaunting.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Akaunting" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://lightit.io/?utm_source=laravel-news&utm_medium=banner&utm_campaign=laravel-news-sponsor" title="LightIt">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/lightit-clear.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="LightIt" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://laravelshift.com/" title="Shift">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/laravel-shift-logo.svg?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Shift" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://aimeos.org/laravel-ecommerce-package" title="Aimeos">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/logo-aimeos-blue.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Aimeos" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://simplebackups.io/?utm_source=laravelnews" title="SimpleBackups">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/simplebackups.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="SimpleBackups" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://devdojo.com/wordsmith" title="DevDojo">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/devdojo-logo-400x100.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="DevDojo" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://harpoonapp.com/?utm_source=laravel-news&utm_medium=banner&utm_campaign=title-partner" title="Harpoon">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/harpoon-logo-laravel-news-title-partnership.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Harpoon" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://www.curotec.com/services/technologies/laravel/" title="Curotec">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/curotec-logo-400-100.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Curotec" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://devsquad.com/?utm_source=laravel-news&utm_medium=cpc&utm_campaign=laravelnews-sponser" title="DevSquad">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/logo-devsquad.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="DevSquad" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://bagisto.com/en/?utm_campaign=laravelnews&utm_content=titlesponsor&utm_medium=logo&utm_source=laravelnews" title="Bagisto">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/bagisto.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Bagisto" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://developers.ringcentral.com/" title="RingCentral">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/ringcentral-1629162944.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="RingCentral" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://beyondco.de/?utm_source=laravel-news&utm_medium=logo&utm_campaign=laravel-news" title="Beyond Code">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/beyondcode_logo.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Beyond Code" />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="https://statamic.com/" title="Statamic">
+                            <picture>
+                                <source sizes="(min-width: 1240px) calc(1200px / 12 * 12), calc(((100vw - 40px) / 12 ) * 12)" data-srcset="https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=640&amp;h=160&amp;q=90&amp;auto=format&amp;fit=crop 640w, https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=768&amp;h=192&amp;q=90&amp;auto=format&amp;fit=crop 768w, https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=1024&amp;h=256&amp;q=90&amp;auto=format&amp;fit=crop 1024w, https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=1366&amp;h=341.5&amp;q=90&amp;auto=format&amp;fit=crop 1366w, https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=1600&amp;h=400&amp;q=90&amp;auto=format&amp;fit=crop 1600w, https://laravelnews.s3.amazonaws.com/partners/statamic-logo.png?w=1920&amp;h=480&amp;q=90&amp;auto=format&amp;fit=crop 1920w" />
+                                <img onload="this.style.backgroundColor='transparent';" loading="lazy" height="100" width="400" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" data-src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQwMCAxMDAiPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjFmMWYxIiAvPgo8L3N2Zz4=" class="lazyload w-48 object-fit object-center h-auto" style="background-color: #f1f1f1;" alt="Statamic" />
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-black">
+    <div class="max-w-screen-2xl grid grid-cols-12 gap-8 py-16 mx-auto">
+        <div class="lg:col-span-3 lg:col-start-2 md:col-span-5 md:col-start-2 col-span-10 col-start-2 mb-10">
+            <p class="font-body mb-4 text-base text-white">Subscribe to the Email Newsletter</p>
+            <form class="js-cm-form flex flex-wrap" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A1DA9AABFFF4B2BC5AD31E42BEF87747B20419BBFFD442A4FC367DD4073E4E8F47B7BC9F7DB38D4B1C9DA62011C4F5CCB">
+                <input type="hidden" id="fieldhrcf-month" name="cm-fd-hrcf-mn" value="11">
+                <input type="hidden" id="fieldhrcf-day" name="cm-fd-hrcf-dy" value="5">
+                <input type="hidden" id="fieldhrcf-year" name="cm-fd-hrcf-yr" value="2022">
+                <label for="footer-newsletter-email" class="sr-only"></label>
+                <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email form-input form-input-dark form-input-sm w-56 text-white rounded-l-sm" id="fieldEmail" maxlength="200" name="cm-owwr-owwr" required="" type="email" placeholder="Your email address" />
+                <button aria-label="Subscribe" class="btn group btn--white btn--sm rounded-sm rounded-l-none rounded-r-sm ">
+<span class="z-10">
+Subscribe
+</span>
+                    <svg class="group-hover:translate-y-0 group-hover:opacity-100 absolute right-0 z-10 mr-3 text-white transition-all duration-200 ease-in transform translate-y-2 opacity-0 fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12.0002H15.17L11.29 15.8802C10.9 16.2702 10.9 16.9102 11.29 17.3002C11.68 17.6902 12.31 17.6902 12.7 17.3002L18.29 11.7102C18.68 11.3202 18.68 10.6902 18.29 10.3002L12.71 4.70021C12.32 4.31021 11.69 4.31021 11.3 4.70021C10.91 5.09021 10.91 5.72021 11.3 6.11021L15.17 10.0002H4C3.45 10.0002 3 10.4502 3 11.0002C3 11.5502 3.45 12.0002 4 12.0002Z" fill="current" /> </svg>
+                </button>
+            </form>
+        </div>
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+        <div class="lg:col-span-5 md:col-span-5 col-span-10 col-start-2">
+            <p class="font-body mb-4 text-base text-white">Follow Laravel News on</p>
+            <div class="flex flex-wrap">
+                <a href="https://www.facebook.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:bg-gray-700 inline-flex items-center px-4 py-3 mb-2 mr-2 transition-colors duration-200 ease-in bg-gray-500 rounded-sm shadow">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"> <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="#1877F2" /> <path d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z" fill="white" /> </svg>
+                    <p class="font-body ml-2 text-sm leading-none text-white capitalize">Facebook</p>
+                </a>
+                <a href="https://twitter.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:bg-gray-700 inline-flex items-center px-4 py-3 mb-2 mr-2 transition-colors duration-200 ease-in bg-gray-500 rounded-sm shadow">
+                    <svg class="h-6 w-6" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M27.0487 5.88631C26.0782 6.31336 25.0438 6.59637 23.9659 6.73353C25.0751 6.06962 25.9215 5.02597 26.3194 3.76837C25.2852 4.38667 24.1437 4.82346 22.9269 5.06704C21.9448 4.01846 20.5455 3.36926 19.0189 3.36926C16.0567 3.36926 13.6722 5.78016 13.6722 8.73553C13.6722 9.16078 13.7081 9.5694 13.7963 9.959C9.34819 9.74123 5.41244 7.60388 2.76846 4.34746C2.30674 5.15027 2.03603 6.06962 2.03603 7.05903C2.03603 8.91693 2.99017 10.564 4.41264 11.5172C3.55306 11.5011 2.70967 11.251 1.99529 10.857V10.9157C1.99529 13.5225 3.84996 15.6878 6.28164 16.1865C5.84611 16.3062 5.37164 16.3633 4.87896 16.3633C4.53673 16.3633 4.19067 16.3435 3.8661 16.2717C4.55953 18.3963 6.52648 19.9582 8.86541 20.0088C7.04508 21.4365 4.73382 22.2968 2.23187 22.2968C1.79322 22.2968 1.37235 22.2775 0.951416 22.2234C3.32135 23.7558 6.13016 24.6307 9.15919 24.6307C19.004 24.6307 24.3868 16.4533 24.3868 9.36526C24.3868 9.12802 24.3783 8.89894 24.3671 8.67176C25.429 7.91609 26.3212 6.97251 27.0487 5.88631Z" fill="#1DA1F2" /> </svg>
+                    <p class="font-body ml-2 text-sm leading-none text-white capitalize">Twitter</p>
+                </a>
+                <a href="https://www.linkedin.com/company/laravel-news" rel="noopener" rel="noreferrer" class="hover:bg-gray-700 inline-flex items-center px-4 py-3 mb-2 mr-2 transition-colors duration-200 ease-in bg-gray-500 rounded-sm shadow">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m22.2283 0h-20.45663c-.46988 0-.920509.186657-1.252761.518909s-.518909.782881-.518909 1.252761v20.45663c0 .4699.186657.9205.518909 1.2528.332252.3322.782881.5189 1.252761.5189h20.45663c.4699 0 .9205-.1867 1.2528-.5189.3322-.3323.5189-.7829.5189-1.2528v-20.45663c0-.46988-.1867-.920509-.5189-1.252761-.3323-.332252-.7829-.518909-1.2528-.518909zm-15.07497 20.445h-3.60833v-11.46167h3.60833zm-1.80666-13.05c-.40931-.0023-.80875-.1258-1.14794-.35491-.33918-.22911-.60289-.55356-.75785-.9324-.15497-.37884-.19423-.7951-.11285-1.19624.08138-.40113.27977-.76917.57013-1.05767.29035-.28849.65966-.48451 1.06131-.56332s.81764-.03687 1.19548.12053c.37784.15739.70059.42318.92752.76382.22692.34065.34785.74088.34753 1.15019.00386.27403-.04749.54604-.15099.7998-.1035.25377-.25703.4841-.45144.67727-.19441.19316-.42572.34521-.68015.44708-.25442.10187-.52675.15147-.80075.14585zm15.10663 13.06h-3.6066v-6.2617c0-1.8466-.785-2.4166-1.7984-2.4166-1.07 0-2.12.8066-2.12 2.4633v6.215h-3.6083v-11.46333h3.47v1.58833h.0467c.3483-.705 1.5683-1.91 3.43-1.91 2.0133 0 4.1883 1.195 4.1883 4.695z" fill="#0a66c2" /></g></svg>
+                    <p class="font-body ml-2 text-sm leading-none text-white capitalize">LinkedIn</p>
+                </a>
+                <a href="https://instagram.com/laravelnews" rel="noopener" rel="noreferrer" class="hover:bg-gray-700 inline-flex items-center px-4 py-3 mb-2 mr-2 transition-colors duration-200 ease-in bg-gray-500 rounded-sm shadow">
+                    <svg class="h-6 w-6" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m12 2.16094c3.2063 0 3.5859.01406 4.8469.07031 1.1719.05156 1.8047.24844 2.2265.4125.5579.21563.961.47813 1.3782.89531.4218.42188.6797.82032.8953 1.37813.164.42187.3609 1.05937.4125 2.22656.0562 1.26562.0703 1.64531.0703 4.84685 0 3.2063-.0141 3.586-.0703 4.8469-.0516 1.1719-.2485 1.8047-.4125 2.2266-.2156.5578-.4782.9609-.8953 1.3781-.4219.4219-.8203.6797-1.3782.8953-.4218.1641-1.0593.3609-2.2265.4125-1.2656.0562-1.6453.0703-4.8469.0703-3.20625 0-3.58594-.0141-4.84687-.0703-1.17188-.0516-1.80469-.2484-2.22657-.4125-.55781-.2156-.96093-.4781-1.37812-.8953-.42188-.4219-.67969-.8203-.89531-1.3781-.16407-.4219-.36094-1.0594-.4125-2.2266-.05625-1.2656-.07032-1.6453-.07032-4.8469 0-3.20622.01407-3.58591.07032-4.84685.05156-1.17188.24843-1.80469.4125-2.22656.21562-.55781.47812-.96094.89531-1.37813.42187-.42187.82031-.67968 1.37812-.89531.42188-.16406 1.05938-.36094 2.22657-.4125 1.26093-.05625 1.64062-.07031 4.84687-.07031zm0-2.16094c-3.25781 0-3.66562.0140625-4.94531.0703125-1.275.0562505-2.15156.2624995-2.91094.5578125-.79219.309375-1.4625.717185-2.12812 1.387495-.67032.66563-1.07813 1.33594-1.387505 2.12344-.295313.76407-.501562 1.63594-.5578125 2.91094-.05625 1.28437-.0703125 1.69219-.0703125 4.95 0 3.2578.0140625 3.6656.0703125 4.9453.0562505 1.275.2624995 2.1516.5578125 2.911.309375.7921.717185 1.4625 1.387505 2.1281.66562.6656 1.33593 1.0781 2.12343 1.3828.76407.2953 1.63594.5015 2.91094.5578 1.27969.0562 1.6875.0703 4.9453.0703s3.6656-.0141 4.9453-.0703c1.275-.0563 2.1516-.2625 2.911-.5578.7875-.3047 1.4578-.7172 2.1234-1.3828s1.0781-1.336 1.3828-2.1235c.2953-.764.5016-1.6359.5578-2.9109.0563-1.2797.0703-1.6875.0703-4.9453 0-3.25782-.014-3.66564-.0703-4.94532-.0562-1.275-.2625-2.15157-.5578-2.91094-.2953-.79688-.7031-1.46719-1.3734-2.13282-.6656-.66562-1.336-1.07812-2.1235-1.382808-.764-.295312-1.6359-.501562-2.9109-.557812-1.2844-.0609375-1.6922-.075-4.95-.075z" /><path d="m12 5.83594c-3.40312 0-6.16406 2.76094-6.16406 6.16406 0 3.4031 2.76094 6.1641 6.16406 6.1641 3.4031 0 6.1641-2.761 6.1641-6.1641 0-3.40312-2.761-6.16406-6.1641-6.16406zm0 10.16246c-2.20781 0-3.99844-1.7906-3.99844-3.9984 0-2.20781 1.79063-3.99844 3.99844-3.99844 2.2078 0 3.9984 1.79063 3.9984 3.99844 0 2.2078-1.7906 3.9984-3.9984 3.9984z" /><path d="m19.8469 5.59226c0 .79688-.6469 1.43907-1.4391 1.43907-.7969 0-1.439-.64688-1.439-1.43907 0-.79687.6468-1.43906 1.439-1.43906s1.4391.64687 1.4391 1.43906z" /></g></svg>
+                    <p class="font-body ml-2 text-sm leading-none text-white capitalize">Instagram</p>
+                </a>
+            </div>
+        </div>
+        <a class="lg:col-span-2 md:col-span-10 md:col-start-2 md:justify-center md:items-center lg:items-end lg:justify-start md:flex-row lg:flex-col group flex flex-col col-span-10 col-start-2" href="https://zaengle.com" aria-label="zaengle.com">
+            <p class="font-body md:mb-0 md:mr-4 lg:mr-0 lg:mb-4 lg:text-right mb-4 text-base text-white transition-colors duration-100 ease-in">
+                Design & development&nbsp;by
+            </p>
+            <svg class="group-hover:text-z-green text-white transition-colors duration-100 ease-in fill-current" width="148" height="46" viewBox="0 0 148 46" fill="current" xmlns="http://www.w3.org/2000/svg"> <path d="M54.3348 21.4531L54.8899 25.0112L66.5023 23.7755C66.8083 22.5366 66.9622 21.2654 66.9604 19.9896C66.9604 14.1005 63.5595 10.674 57.6917 10.674C51.8238 10.674 46.7842 14.898 46.7842 23.2672C46.7842 30.208 50.6696 35.0542 57.8238 35.0542C63.5595 35.0542 66.6344 33.0912 66.6344 33.0912L65.7533 29.0249C63.4304 29.8496 60.9936 30.3137 58.5287 30.4008C54.2908 30.4008 52.1939 28.3939 52.1939 23.276C52.1939 16.6419 54.7578 15.0645 57.6917 15.0645C60.467 15.0645 61.8415 16.8172 61.8415 20.0422V20.3051L54.3348 21.4531Z" fill="current" /> <path d="M42.8722 20.1562C42.8722 14.3635 38.8193 10.7178 32.4757 10.7178C30.1474 10.6904 27.8255 10.9643 25.5682 11.5328L26.1233 16.0987C27.9885 15.6687 29.8922 15.425 31.8061 15.3713C35.4889 15.3713 37.1718 16.8348 37.2599 19.6654V29.6647L41.4096 35.0543L45.7356 32.5829L42.8986 27.5176L42.8722 20.1562Z" fill="current" /> <path d="M31.5948 30.4096C28.934 30.4096 28.1939 28.9198 28.1939 27.1671C28.1885 26.3321 28.4475 25.5165 28.934 24.836L34.8988 23.7318V20.1562L26.793 21.2079C25.6459 21.8293 24.6866 22.7444 24.0143 23.8584C23.3421 24.9723 22.9812 26.2447 22.9692 27.5439C22.9692 31.7505 25.5331 35.0368 31.2688 35.0368C33.2241 35.0379 35.1298 34.4244 36.7137 33.2841L34.8988 29.6297C33.867 30.1239 32.7398 30.39 31.5948 30.4096Z" fill="current" /> <path d="M20.0352 11.454H0V16.0636H20.0352V11.454Z" fill="current" /> <path d="M7.0837 29.2528L8.81057 27.7893L17.2863 18.7979L10.7137 18.3948L0 29.6647V34.2744H20.0352V29.6647H7.0837V29.2528Z" fill="current" /> <path d="M103.489 26.9217C108.159 26.9217 112.855 24.1612 112.855 19.0345C112.855 15.3889 110.432 12.7861 107.568 11.5066C107.85 9.85029 108.123 7.86096 108.176 7.1774L103.559 6.85315V14.977C106.59 15.0208 107.612 16.8962 107.612 19.0345C107.612 21.462 106.405 22.908 103.507 22.908C100.608 22.908 99.1013 21.4445 99.1013 19.0345C99.0198 18.2055 99.2312 17.374 99.6991 16.6831C100.167 15.9922 100.862 15.485 101.665 15.2487L100.687 11.0684C98.4053 11.6205 93.8414 13.8903 93.8414 19.052C93.8502 24.6432 98.326 26.9217 103.489 26.9217Z" fill="current" /> <path d="M76.0528 11.454H70.4141V34.2743H76.0528V11.454Z" fill="current" /> <path d="M122.74 26.1067V0H117.101V26.7464C117.101 33.2665 118.943 34.8264 125.612 34.8264V29.7085C123.295 29.7085 122.74 28.6131 122.74 26.1067Z" fill="current" /> <path d="M139.559 30.4095C135.322 30.4095 133.225 28.4027 133.225 23.2847C133.225 16.6507 135.789 15.0733 138.722 15.0733C141.498 15.0733 142.863 16.826 142.863 20.0422V20.3139L135.366 21.4531L135.921 25.0112L147.533 23.7755C147.842 22.5369 147.998 21.2657 148 19.9896C148 14.1005 144.599 10.674 138.722 10.674C132.846 10.674 127.841 14.898 127.841 23.276C127.841 30.2167 131.727 35.0542 138.881 35.0542C144.617 35.0542 147.692 33.0912 147.692 33.0912L146.811 29.0249C144.478 29.8476 142.033 30.3144 139.559 30.4095Z" fill="current" /> <path d="M112.273 31.2597L97.9207 28.3414C97.6231 29.1847 97.4973 30.0784 97.5507 30.9705C97.6056 31.8104 97.8625 32.6248 98.2996 33.3454L109.251 35.2734C109.569 35.8458 109.715 36.4964 109.674 37.1488C109.674 39.5676 107.912 41.3466 104.176 41.3466C100.441 41.3466 98.2115 39.7954 98.2115 37.2803C98.2175 36.9017 98.2499 36.5239 98.3084 36.1498L93.9031 35.4575C93.5195 36.3672 93.3276 37.3455 93.3392 38.3319C93.3392 42.8977 97.7445 46 103.454 46C110.908 46 114.908 41.7585 114.908 36.9648C114.93 35.8777 114.704 34.7998 114.248 33.8118C113.792 32.8237 113.117 31.9512 112.273 31.2597Z" fill="current" /> <path d="M82.5286 10.6829C80.2467 10.6829 77.9119 12.5057 77.9119 12.5057L79.022 16.572C79.908 16.1209 80.8754 15.8498 81.8678 15.7745C84.2026 15.7745 85.1982 16.4142 85.1982 18.6051V34.2744H90.8194V17.9829C90.8194 12.8738 86.3436 10.6829 82.5286 10.6829Z" fill="current" /> </svg>
+        </a>
+        <div class="col-span-10 col-start-2 mb-6">
+            <div class="md:items-center lg:items-start flex flex-col w-full">
+                <div class="flex flex-wrap mb-4">
+
+
+
+                    <a href="/newsletter" aria-label="click to go to Newsletter" class="mr-6 mb-2">
+                        <span class="link  font-body link--white text-base ">Newsletter</span>
+                    </a>
+                    <a href="/category/tutorials" aria-label="click to go to Tutorials" class="mr-6 mb-2">
+                        <span class="link  font-body link--white text-base ">Tutorials</span>
+                    </a>
+
+
+
+                    <a href="/resources" aria-label="training resources" class="mr-6 mb-2">
+                        <span class="link  font-body link--white text-base ">Training Resources</span>
+                    </a>
+                    <a href="https://larajobs.com/laravel-consultants" aria-label="laravel consultants" class="mr-6 mb-2">
+                        <span class="link  font-body link--white text-base ">Laravel Consultants</span>
+                    </a>
+                </div>
+                <div class="lg:flex-row flex flex-col justify-between w-full">
+                    <div class="lg:w-2/3 md:flex md:flex-wrap md:justify-center lg:justify-start w-full">
+                        <a href="/partners" aria-label="click to go to Partners">
+                            <span class="link  font-body link--gray mr-6 text-sm ">Partners</span>
+                        </a>
+                        <a href="/advertising" aria-label="click to go to Advertising">
+                            <span class="link  font-body link--gray mr-6 text-sm ">Advertising</span>
+                        </a>
+
+
+
+                        <a href="/login" aria-label="click to go to Login">
+                            <span class="link  font-body link--gray mr-6 text-sm ">Login</span>
+                        </a>
+                        <a href="/contact" aria-label="click to go to Contact">
+                            <span class="link  font-body link--gray mr-6 text-sm ">Contact</span>
+                        </a>
+                        <a href="https://usefathom.com/ref/XVJKMT" aria-label="stats">
+                            <span class="link  font-body link--gray mr-6 text-sm ">Stats by Fathom</span>
+                        </a>
+                    </div>
+                    <div class="lg:w-1/3 lg:text-right lg:mt-0 md:text-center w-full mt-6 text-left">
+                        <p class="font-body text-xs text-gray-300">
+                            &copy; 2012 - 2022 Laravel News
+                        </p>
+                        <p class="font-body text-xs text-gray-300">
+                            A division of dotdev inc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7654f2f5f9df77ad","token":"036ae43092b6429fbf4c640fd73dc0e2","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
